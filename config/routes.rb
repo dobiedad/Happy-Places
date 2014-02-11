@@ -1,4 +1,13 @@
 Happy1App::Application.routes.draw do
+ 
+  resources :audios
+  match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/home',    to: 'static_pages#home',   via: 'get'
+  match '/holidays',    to: 'static_pages#holidays',    via: 'get'
+  match '/faq',    to: 'static_pages#faq',   via: 'get'
+  match '/contact',    to: 'static_pages#contact',    via: 'get'
+  match '/login',    to: 'static_pages#login',   via: 'get'
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
