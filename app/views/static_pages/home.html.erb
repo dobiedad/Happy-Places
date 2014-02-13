@@ -1,8 +1,20 @@
+<head><%= render 'layouts/header' %></head>
 
-<%= render 'layouts/header' %>
-<style type="text/css">
-  html {
-    background: url(<%= randomized_background_image %>) no-repeat center center fixed; 
-  }
-</style>
-</head>
+
+<%= javascript_include_tag "imagesloaded" %>
+<%= javascript_include_tag "jquery-ui.min" %>
+<%= javascript_include_tag "video" %>
+<%= javascript_include_tag "bigvideo" %>
+
+
+<script>
+$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+});
+</script><link rel="stylesheet" href="../../../vendor/assets/stylesheets/video-js.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+<div id="ambient" class="box">
+	<center> bla bla bla bla bla</center>
+</div>
