@@ -85,7 +85,7 @@
 					// is image
 					$('#big-video-image')
 						.css({
-							width: 'auto',
+							width: '1200px',
 							height: windowH,
 							top:0,
 							left:-(windowH*mediaAspect-windowW)/2

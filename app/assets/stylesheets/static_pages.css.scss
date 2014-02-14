@@ -3,51 +3,55 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #nav {
-	width: 28.8%;
 	float: right;
 	margin: -1 0 3em 0;
 	padding: 0;
 	position: fixed;
-	top: 50px;
-	left: 50px;
-    
+	top: 0px;
+	left: 8px;
+   
 	list-style: none;
-	background-color: rgba(242, 242, 242, 0.6);
+	background-color: rgba(0,0,0,.6);
 	border-bottom: 1px solid #ccc; 
-	border-top: 1px solid #ccc; }
+	border-top: 1px solid #ccc;
+	border-color:red;
+}
 #nav li {
-	float: left; }
+	float: left; 
+}
 #nav li a {
 	display: block;
 	padding: 8px 15px;
 	text-decoration: none;
 	font-weight: bold;
 	color: #069;
-	border-right: 1px solid #ccc; }
+	border-right: 1px solid #ccc; 
+}
 #nav li a:hover {
 	color: #c00;
-	background-color: #fff; }
+	background-color: rgba(255, 250, 250, 0.4); 
+}
 	
-	div
-	{
+div{
+	
 	background-size:80px 60px;
 	background-repeat:no-repeat;
-	}
+}
 	
 	audio {
 	width: 300px;
 	height: 10px;
 	float: right;
 	position: absolute;
-	}
+}
 	.img {
 	  border: 5px solid #000;
 	  margin: 0;
-	      width: 100%;
+	      width: 100% ;
 	      height: 100%;
 	   
 	   
-	}
+}
 	
 	#next {
 		width: 35.5%;
@@ -60,67 +64,95 @@
 	     width: 8em;
 	     margin-top: -2.5em;
 		list-style: none;
-		background-color: rgba(242, 242, 242, 0.6);
+		background-color: rgba(0, 0, 0, 0.6);
 		border-bottom: 1px solid #ccc; 
-		border-top: 1px solid #ccc; }
+		border-top: 1px solid #ccc;
+		border-color:red; 
+}
 	#next li {
-		float: left; }
+		float: left; 
+}
 	#next li a {
 		display: block;
 		padding: 8px 15px;
 		text-decoration: none;
 		font-weight: bold;
 		color: #069;
-		border-right: 1px solid #ccc; }
-	#next li a:hover {
-		color: #c00;
-		background-color: #fff; }
+		border-right: 1px solid #ccc; 
 		
-		
-		button.css3button {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 14px;
-			color: #FFF;
-			padding: 10px 20px;
-		    left:609px;
-		     top:65px;
-		     width: 92em;
-		     margin-top: -2.5em;
-			background: -moz-linear-gradient(
-				top,
-				#a3a3a3 0%,
-				#3b3b3b 50%,
-				#242424 50%,
-				#000000);
-			background: -webkit-gradient(
-				linear, left top, left bottom,
-				from(#a3a3a3),
-				color-stop(0.50, #3b3b3b),
-				color-stop(0.50, #242424),
-				to(#000000));
-			-moz-border-radius: 10px;
-			-webkit-border-radius: 10px;
-			border-radius: 10px;
-			border: 1px solid #000000;
-			-moz-box-shadow:
-				0px 1px 3px rgba(000,000,000,0.5),
-				inset 0px 0px 1px rgba(255,255,255,0.6);
-			-webkit-box-shadow:
-				0px 1px 3px rgba(000,000,000,0.5),
-				inset 0px 0px 1px rgba(255,255,255,0.6);
-			box-shadow:
-				0px 1px 3px rgba(000,000,000,0.5),
-				inset 0px 0px 1px rgba(255,255,255,0.6);
-			text-shadow:
-				0px -1px 0px rgba(000,000,000,1),
-				0px 1px 0px rgba(255,255,255,0.2);
-				
+		&:hover {
+			color: beige;
+			background-color: rgba(255, 250, 250, 0.4); 
 		}
+}
+	
+		
+		
+		.css3button {
+			width: 35.5%;
+			float: center;
+			margin: -1 0 3em 0;
+			padding: 0;
+			position: fixed;
+		    right: 40%;
+		     bottom: 0%;
+		     width: 14em;
+		     margin-top: -2.5em;
+			list-style: none;
+			background-color: rgba(0, 0, 0, 0.6);
+			border-bottom: 1px solid #ccc; 
+			border-top: 1px solid #ccc;
+			border-color:red; 
+			color:#069;
+			display: block;
+			padding: 8px 15px;
+			text-decoration: none;
+			font-weight: bold;
+			color: gray;
+			border-right: 1px solid #ccc; 
+}			
+
+       .css3button:hover {
+		color: #c00;
+		background-color: rgba(255, 250, 250, 0.4); 
+}
+		
+		
 		
 		.box {
 		background: #444;
 		background: rgba(0,0,0,.6);
-		padding: 20px;
-		border-radius: 5px;
-		margin-bottom: 20px; }
+		padding: 100px;
+		border-radius: 50px;
+		margin-bottom: 50px;
+		margin-top: 200px;
+		top: 30%;
+		left: 30%;
+		z-index: 9999999999;
+		width:450px;
+		
+		color: #fff;
+		text-align: center;
+		
+		}
+		
+		.hol
+		{text-align: center;}
+		
+		.h1{
+		font-size: 12px;}
+		
+		.main {
+		position: relative;
+		margin: 50px 50px 440px 351px;
+		min-width: 300px;
+		-webkit-transition-duration: 0.6s;
+		-moz-transition-duration: 0.6s;
+		-ms-transition-duration: 0.6s;
+		-o-transition-duration: 0.6s;
+		transition-duration: 0.6s;
+		}
+		#big-video-vid
+		{width: 100% ;}
+	
 		

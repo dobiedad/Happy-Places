@@ -1,6 +1,23 @@
-<ul id="nav">
+
+	<%= stylesheet_link_tag 'bigvideo' %>
+	<%= stylesheet_link_tag 'video-js' %>
+
+	<%= javascript_include_tag "jquery-ui.js" %>
+	<%= javascript_include_tag "video.js" %>
+	<%= javascript_include_tag "imagesloaded.js" %>
+	<%= javascript_include_tag "bigvideo.js" %>
+<ul id="nav">	
 	<li><%= link_to "Home", home_path, class: "nav" %></li>
 	<li><%= link_to "About Us", about_path, class: "nav" %></li>
-	<li><%= link_to "Holidays", holidays_path, class: "nav" %></li>
+	<li><%= link_to "Holidays", holidays_path, class: "button" %></li>
 	<li><%= link_to "Contact Us", contact_path, class: "nav" %></li>
 	</ul>
+	
+	<script>
+	$(function() {
+	    var BV = new $.BigVideo();
+	    BV.init();
+	    BV.show('assets/vid.mp4',{ambient:true}); 
+	
+	});
+	</script>
