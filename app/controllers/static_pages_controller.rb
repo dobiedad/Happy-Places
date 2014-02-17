@@ -13,6 +13,6 @@ class StaticPagesController < ApplicationController
   end
   
   def random
-    render template: "locations/#{rand 0..7}"
+    render template: "locations/#{rand 0..0}"
   end
 end

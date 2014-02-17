@@ -1,12 +1,27 @@
 Happy1App::Application.routes.draw do
  
   resources :audios
-  root :to => 'static_pages#home'
+  root :to => 'public#index'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/home',    to: 'static_pages#home',   via: 'get'
   match '/holidays',    to:'static_pages#random',    via: 'get'
   match '/about',    to: 'static_pages#about',   via: 'get'
   match '/contact',    to: 'static_pages#contact',    via: 'get'
+  match '/1',    to: 'static_pages#1',    via: 'get'
+  match '/2',    to: 'static_pages#2',   via: 'get'
+  match '/3',    to: 'static_pages#3',    via: 'get'
+  match '/4',    to: 'static_pages#4',    via: 'get'
+  match '/5',    to: 'static_pages#5',   via: 'get'
+  match '/6',    to: 'static_pages#6',    via: 'get'
+  match '/7',    to: 'static_pages#7',    via: 'get'
+  match '/0',    to: 'static_pages#0',   via: 'get'
+  match '/8',    to: 'static_pages#8',    via: 'get'
+  match '/9',    to: 'static_pages#9',   via: 'get'
+  match '/10',    to: 'static_pages#10',   via: 'get'
+  match '/11',    to: 'static_pages#11',    via: 'get'
+  match '/12',    to: 'static_pages#12',   via: 'get'
+  
+ 
  
  
   # The priority is based upon order of creation: first created -> highest priority.
