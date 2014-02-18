@@ -9,6 +9,26 @@
 <body>
 
 <%= yield %>
+<script>
+function rndnumber(current)
+{
 
+  var next;
+  while (next===undefined || next == current)
+  {
+	next=Math.floor(Math.random()*(13));
+  }
+	console.log(current,next)
+  return next;
+}
+
+document.querySelector ("#next a").onclick= function() {
+  var  currentPath = window.location.pathname;
+  var current = currentPath.replace ("/","")
+		
+	window.location=rndnumber(current);	
+	return false ;
+}
+</script>
 </body>
 </html>
